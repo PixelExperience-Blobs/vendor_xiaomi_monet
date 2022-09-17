@@ -6,10 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/monet
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/monet/proprietary/system/lib/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcameraservice.so \
-    vendor/xiaomi/monet/proprietary/system/lib/libmediaplayer_shim.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmediaplayer_shim.so \
     vendor/xiaomi/monet/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/xiaomi/monet/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar \
     vendor/xiaomi/monet/proprietary/system_ext/lib/vendor.qti.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.camera.device@1.0.so \
     vendor/xiaomi/monet/proprietary/system_ext/lib/vendor.qti.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.camera.device@3.5.so \
     vendor/xiaomi/monet/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service_64 \
@@ -765,4 +762,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON \
-    HotwordEnrollmentXGoogleHEXAGON
+    HotwordEnrollmentXGoogleHEXAGON \
+    com.android.hotwordenrollment.common.util
